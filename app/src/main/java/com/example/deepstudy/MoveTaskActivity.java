@@ -1,5 +1,6 @@
 package com.example.deepstudy; // Sesuaikan dengan package kamu
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.KeyEvent;
@@ -111,7 +112,7 @@ public class MoveTaskActivity extends AppCompatActivity {
     }
 
     private void startTimer(int minutes) {
-        timeLeftInMillis = minutes * 60 * 1000; // Ubah menit ke milidetik
+        timeLeftInMillis = minutes * 6 * 1; // Ubah menit ke milidetik
 
         countDownTimer = new CountDownTimer(timeLeftInMillis, 1000) {
             @Override
@@ -123,8 +124,12 @@ public class MoveTaskActivity extends AppCompatActivity {
             @Override
             public void onFinish() {
                 tvTimer.setText("00:00");
-                Toast.makeText(MoveTaskActivity.this, "Session Finished! Take a break.", Toast.LENGTH_LONG).show();
-                // Disini kamu bisa tambah logika notifikasi/suara
+
+                Intent intent = new Intent(MoveTaskActivity.this, ResultActivity.class);
+                startActivity(intent);
+
+                // 3. Matikan Activity ini agar user tidak bisa tekan tombol back ke timer yang sudah habis
+                finish();
             }
         }.start();
     }

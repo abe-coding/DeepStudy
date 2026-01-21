@@ -20,7 +20,6 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.MyViewHolder> 
     private Context context;
     private List<Task> taskList;
 
-    // Listener untuk mengirim event klik ke Activity
     private OnTaskClickListener listener;
 
     public interface OnTaskClickListener {
@@ -50,14 +49,11 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.MyViewHolder> 
         Task task = taskList.get(position);
         holder.tvTitle.setText(task.title);
 
-        // --- LOGIKA FRONTEND BERUBAH DISINI ---
         if (task.isSelected) {
-            // Jika dipilih: Background agak putih, Teks Putih, Icon Mint
             holder.container.setBackgroundColor(Color.parseColor("#1AFFFFFF"));
             holder.ivStatus.setColorFilter(Color.parseColor("#D4F2E7")); // Mint
             holder.tvTitle.setTextColor(Color.WHITE);
         } else {
-            // Jika tidak dipilih: Background transparan, Teks Abu, Icon Abu
             holder.container.setBackgroundColor(Color.TRANSPARENT);
             holder.ivStatus.setColorFilter(Color.parseColor("#5C6690")); // Abu
             holder.tvTitle.setTextColor(Color.parseColor("#B0B5D6"));
