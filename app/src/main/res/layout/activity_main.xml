@@ -200,7 +200,7 @@
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_weight="1"
-            android:layout_marginEnd="4dp"
+            android:layout_marginEnd="15dp"
             android:text="1x"
             android:textColor="@color/mint_text"
             android:textSize="16sp"
@@ -214,7 +214,7 @@
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_weight="1"
-            android:layout_marginEnd="4dp"
+            android:layout_marginEnd="15dp"
             android:text="2x"
             android:textColor="@color/text_secondary"
             app:backgroundTint="@color/card_unselected"
@@ -227,7 +227,7 @@
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_weight="1"
-            android:layout_marginEnd="4dp"
+            android:layout_marginEnd="15dp"
             android:text="3x"
             android:textColor="@color/text_secondary"
             app:backgroundTint="@color/card_unselected"
@@ -235,19 +235,19 @@
             android:insetTop="0dp"
             android:insetBottom="0dp"/>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnCustom"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:text="Custom"
-            android:textAllCaps="false"
-            android:textColor="@color/text_secondary"
-            android:textSize="12sp"
-            app:backgroundTint="@color/card_unselected"
-            app:cornerRadius="20dp"
-            android:insetTop="0dp"
-            android:insetBottom="0dp"/>
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/btnCustom"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="Custom"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textColor="@color/text_secondary"-->
+<!--            android:textSize="12sp"-->
+<!--            app:backgroundTint="@color/card_unselected"-->
+<!--            app:cornerRadius="20dp"-->
+<!--            android:insetTop="0dp"-->
+<!--            android:insetBottom="0dp"/>-->
     </LinearLayout>
 
     <com.google.android.material.button.MaterialButton

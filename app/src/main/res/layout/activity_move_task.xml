@@ -77,29 +77,6 @@
                 android:layout_marginTop="16dp"
                 android:orientation="horizontal">
 
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnAdd"
-                    android:layout_width="0dp"
-                    android:layout_height="55dp"
-                    android:layout_weight="1"
-                    android:layout_marginEnd="8dp"
-                    android:text="Add New Task"
-                    android:textAllCaps="false"
-                    android:textColor="@color/text_secondary"
-                    app:backgroundTint="@color/card_unselected"
-                    app:cornerRadius="12dp" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnStartNext"
-                    android:layout_width="0dp"
-                    android:layout_height="55dp"
-                    android:layout_weight="1"
-                    android:layout_marginStart="8dp"
-                    android:text="Start Next Task"
-                    android:textAllCaps="false"
-                    android:textColor="@color/mint_text"
-                    app:backgroundTint="@color/mint_accent"
-                    app:cornerRadius="12dp" />
             </LinearLayout>
 
             <TextView
@@ -132,7 +109,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="24dp"
-                android:text="Title Task"
+                android:text="Add new Task here"
                 android:textColor="@color/text_white"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -261,69 +238,6 @@
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
             </LinearLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="24dp"
-                android:text="Select Task"
-                android:textColor="@color/text_white"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-            <HorizontalScrollView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:paddingStart="24dp"
-                android:scrollbars="none">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:paddingEnd="24dp">
-
-                    <com.google.android.material.button.MaterialButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="8dp"
-                        android:text="Math Homework"
-                        android:textAllCaps="false"
-                        android:textColor="@color/text_secondary"
-                        app:backgroundTint="@color/card_unselected"
-                        app:cornerRadius="8dp" />
-
-                    <com.google.android.material.button.MaterialButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="8dp"
-                        android:text="Read Chapter 3"
-                        android:textAllCaps="false"
-                        android:textColor="@color/text_secondary"
-                        app:backgroundTint="@color/card_unselected"
-                        app:cornerRadius="8dp" />
-
-                    <com.google.android.material.button.MaterialButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Write Essay"
-                        android:textAllCaps="false"
-                        android:textColor="@color/text_secondary"
-                        app:backgroundTint="@color/card_unselected"
-                        app:cornerRadius="8dp" />
-                </LinearLayout>
-            </HorizontalScrollView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="4dp"
-                android:text="Your task will begin once selected."
-                android:textColor="@color/text_secondary"
-                android:textSize="12sp" />
 
         </LinearLayout>
     </ScrollView>
