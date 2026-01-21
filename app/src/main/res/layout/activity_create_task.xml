@@ -19,7 +19,7 @@
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
         android:background="?attr/selectableItemBackgroundBorderless"
-        android:src="@drawable/outline_arrow_back_ios_24"
+        android:src="@drawable/ic_launcher_foreground"
         app:tint="@color/text_white"
         app:layout_constraintBottom_toBottomOf="@id/headerBg"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,20 +57,18 @@
         android:layout_marginHorizontal="24dp"
         android:layout_marginTop="8dp"
         android:textColorHint="@color/text_secondary"
-
         app:boxCornerRadiusTopStart="16dp"
         app:boxCornerRadiusTopEnd="16dp"
         app:boxCornerRadiusBottomStart="16dp"
         app:boxCornerRadiusBottomEnd="16dp"
-
         app:boxBackgroundColor="@color/card_unselected"
         app:boxStrokeColor="@color/card_unselected"
         app:boxStrokeWidth="0dp"
-
         app:hintEnabled="false"
         app:layout_constraintTop_toBottomOf="@id/tvLabelTitle">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etTaskTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@null"
@@ -129,81 +127,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvYourTasks" />
 
-    <LinearLayout
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewTasks"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginHorizontal="24dp"
         android:layout_marginTop="16dp"
-        android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@id/btnStartSession"
-        app:layout_constraintTop_toBottomOf="@id/tvSelectTask">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:paddingVertical="12dp">
-
-            <View
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:background="@drawable/ic_launcher_foreground"
-                android:backgroundTint="#5C6690"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:text="AOL OS"
-                android:textColor="@color/text_secondary"
-                android:textSize="16sp" />
-        </LinearLayout>
-        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#30FFFFFF"/>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:paddingVertical="12dp">
-
-            <View
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:background="@drawable/ic_launcher_foreground"
-                android:backgroundTint="#5C6690"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:text="AOL OOAD"
-                android:textColor="@color/text_secondary"
-                android:textSize="16sp" />
-        </LinearLayout>
-        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#30FFFFFF"/>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#1AFFFFFF"
-            android:gravity="center_vertical"
-            android:paddingVertical="12dp"
-            android:paddingHorizontal="8dp">
-            <View
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:background="@drawable/ic_launcher_foreground"
-                android:backgroundTint="@color/mint_accent"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:text="Quiz Lab"
-                android:textColor="@color/text_white"
-                android:textSize="16sp" />
-        </LinearLayout>
-        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#30FFFFFF"/>
-
-    </LinearLayout>
+        app:layout_constraintTop_toBottomOf="@id/tvSelectTask" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnStartSession"
