@@ -51,27 +51,22 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.MyViewHolder> 
 
         if (task.isSelected) {
             holder.container.setBackgroundColor(Color.parseColor("#1AFFFFFF"));
-            holder.ivStatus.setColorFilter(Color.parseColor("#D4F2E7")); // Mint
+            holder.ivStatus.setColorFilter(Color.parseColor("#D4F2E7"));
             holder.tvTitle.setTextColor(Color.WHITE);
         } else {
             holder.container.setBackgroundColor(Color.TRANSPARENT);
-            holder.ivStatus.setColorFilter(Color.parseColor("#5C6690")); // Abu
+            holder.ivStatus.setColorFilter(Color.parseColor("#5C6690"));
             holder.tvTitle.setTextColor(Color.parseColor("#B0B5D6"));
         }
 
-        // Saat item diklik
         holder.itemView.setOnClickListener(v -> {
-            // 1. Reset semua jadi false
             for (Task t : taskList) {
                 t.isSelected = false;
             }
-            // 2. Set item yang diklik jadi true
             task.isSelected = true;
 
-            // 3. Update tampilan (Refresh RecyclerView)
             notifyDataSetChanged();
 
-            // 4. Kirim data ke Activity
             listener.onTaskClick(task);
         });
     }

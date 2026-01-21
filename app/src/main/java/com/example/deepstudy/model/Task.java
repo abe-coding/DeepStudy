@@ -10,7 +10,6 @@ public class Task {
 
     public String title;
 
-    // Field ini untuk logika frontend (warna berubah saat dipilih)
     public boolean isSelected = false;
 
     public Task(String title) {

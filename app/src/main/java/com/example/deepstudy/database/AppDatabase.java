@@ -16,7 +16,7 @@ public abstract class AppDatabase extends RoomDatabase {
         if(INSTANCE == null) {
             INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
                             AppDatabase.class, "DeepStudyDB")
-                    .allowMainThreadQueries() // Untuk pemula/belajar, ini diizinkan agar simpel
+                    .allowMainThreadQueries()
                     .build();
         }
         return INSTANCE;
