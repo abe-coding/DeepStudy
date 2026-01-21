@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="deep_blue_bg">#53629E</color>
+    <color name="dark_purple_header">#473472</color>
+    <color name="mint_accent">#87BAC3</color>
+    <color name="mint_text">#D6F4ED</color> <color name="card_unselected">#363D6B</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_secondary">#B0B5D6</color>
+</resources>
